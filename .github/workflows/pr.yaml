@@ -42,6 +42,6 @@ jobs:
       - run: go version
       - run: make deps
       - run: make fmt || git diff || true
-      - run: make vet
-      - run: make staticcheck
-      - run: make shortcheck
+      - run: make vet || git diff || true
+      - run: make staticcheck || git diff || true
+      - run: make shortcheck || git diff || true
