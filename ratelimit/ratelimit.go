@@ -44,7 +44,7 @@ const (
 	DisableRatelimitName = filters.DisableRatelimitName
 
 	// Deprecated, use filters.UnknownRatelimitName instead
-	UknownRatelimitName = filters.UnknownRatelimitName
+	UnknownRatelimitName = filters.UnknownRatelimitName
 
 	sameBucket = "s"
 )
