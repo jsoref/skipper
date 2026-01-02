@@ -40,3 +40,10 @@ jobs:
       with:
         sarif_file: cifuzz-sarif/results.sarif
         category: fuzzing-${{  matrix.sanitizer  }}
+
+    - name: Upload SARIF (artifact)
+      if: always()
+      uses: actions/upload-artifact@v6
+      with:
+        name: sarif
+        path: cifuzz-sarif/results.sarif
